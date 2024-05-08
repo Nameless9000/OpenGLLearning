@@ -12,19 +12,14 @@ void create_block(v3 position, BlockColor color) {
 }
 
 // rendering
-
-float angle = 0.0;
-
-static void init()
-{
+static void init() {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
     glEnable(GL_COLOR_MATERIAL);
 }
 
-static void display()
-{
+static void display() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glMatrixMode(GL_PROJECTION);
@@ -43,7 +38,7 @@ static void display()
     static float angle = 0;
     angle += 1.0f;
 
-    glRotatef(angle, 0.1, 0.2, 0.5);
+    glRotatef(angle, 0.1f, 0.2f, 0.5f);
 
     // draw blocks
     for (Block block : blocks) {
@@ -57,26 +52,23 @@ static void display()
     glutSwapBuffers();
 }
 
-static void reshape(int w, int h)
-{
+static void reshape(int w, int h) {
     glViewport(0, 0, w, h);
 }
 
-static void timer(int extra)
-{
+static void timer(int extra) {
     glutPostRedisplay();
     glutTimerFunc(16, timer, 0);
 }
 
-void render_init(const char* window_name, int argc, char** argv) {
-    glutInit(&argc, argv);
+void render_init(const char* window_name, int* argc, char** argv) {
+    glutInit(argc, argv);
     glutInitWindowSize(640, 480);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
     glutCreateWindow(window_name);
 }
 
-void render_blocks()
-{
+void render_blocks() {
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);
     glutTimerFunc(0, timer, 0);
