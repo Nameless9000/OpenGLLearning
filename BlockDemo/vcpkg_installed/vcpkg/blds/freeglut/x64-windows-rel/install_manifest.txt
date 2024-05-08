@@ -1,0 +1,12 @@
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/lib/freeglut.lib
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/bin/freeglut.dll
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/include/GL/freeglut.h
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/include/GL/freeglut_ucall.h
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/include/GL/freeglut_ext.h
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/include/GL/freeglut_std.h
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/include/GL/glut.h
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/lib/pkgconfig/glut.pc
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/lib/cmake/FreeGLUT/FreeGLUTTargets.cmake
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/lib/cmake/FreeGLUT/FreeGLUTTargets-release.cmake
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/lib/cmake/FreeGLUT/FreeGLUTConfig.cmake
+D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/pkgs/freeglut_x64-windows/lib/cmake/FreeGLUT/FreeGLUTConfigVersion.cmake

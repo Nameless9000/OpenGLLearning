@@ -1,0 +1,6 @@
+D:/Projects/OpenGLLearning/BlockDemo/vcpkg_installed/x64-windows/vcpkg/blds/freeglut/x64-windows-rel/CMakeFiles/freeglut.dir
+D:/Projects/OpenGLLearning/BlockDemo/vcpkg_installed/x64-windows/vcpkg/blds/freeglut/x64-windows-rel/CMakeFiles/edit_cache.dir
+D:/Projects/OpenGLLearning/BlockDemo/vcpkg_installed/x64-windows/vcpkg/blds/freeglut/x64-windows-rel/CMakeFiles/rebuild_cache.dir
+D:/Projects/OpenGLLearning/BlockDemo/vcpkg_installed/x64-windows/vcpkg/blds/freeglut/x64-windows-rel/CMakeFiles/list_install_components.dir
+D:/Projects/OpenGLLearning/BlockDemo/vcpkg_installed/x64-windows/vcpkg/blds/freeglut/x64-windows-rel/CMakeFiles/install.dir
+D:/Projects/OpenGLLearning/BlockDemo/vcpkg_installed/x64-windows/vcpkg/blds/freeglut/x64-windows-rel/CMakeFiles/install/local.dir

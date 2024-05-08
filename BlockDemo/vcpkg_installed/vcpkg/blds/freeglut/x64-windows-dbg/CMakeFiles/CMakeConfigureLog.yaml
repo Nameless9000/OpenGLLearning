@@ -1,0 +1,468 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:2 (PROJECT)"
+    message: |
+      The target system is: Windows - 10.0.19045 - AMD64
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: E:/Visual Studio/2022/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe 
+      Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/MP
+      Id flags:  
+      
+      The output was:
+      0
+      CMakeCCompilerId.c
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/3.28.0-msvc1/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (PROJECT)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-6zespj"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-6zespj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-6zespj'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5d291
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5d291.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_5d291.dir\\ /FS -c "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_5d291.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_5d291.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_5d291.exe /implib:cmTC_5d291.lib /pdb:cmTC_5d291.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:376 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-v1wh8p"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-v1wh8p"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-v1wh8p'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1d602
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1d602.dir\\HAVE_SYS_TYPES_H.c.obj /FdCMakeFiles\\cmTC_1d602.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-v1wh8p\\HAVE_SYS_TYPES_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1d602.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_1d602.dir\\HAVE_SYS_TYPES_H.c.obj  /out:cmTC_1d602.exe /implib:cmTC_1d602.lib /pdb:cmTC_1d602.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:377 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-coch23"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-coch23"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-coch23'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1c9f9
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1c9f9.dir\\HAVE_UNISTD_H.c.obj /FdCMakeFiles\\cmTC_1c9f9.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-coch23\\HAVE_UNISTD_H.c
+        FAILED: CMakeFiles/cmTC_1c9f9.dir/HAVE_UNISTD_H.c.obj 
+        "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1c9f9.dir\\HAVE_UNISTD_H.c.obj /FdCMakeFiles\\cmTC_1c9f9.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-coch23\\HAVE_UNISTD_H.c
+        D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-coch23\\HAVE_UNISTD_H.c(2): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:378 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-18kuh8"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-18kuh8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-18kuh8'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5230f
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5230f.dir\\HAVE_SYS_TIME_H.c.obj /FdCMakeFiles\\cmTC_5230f.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-18kuh8\\HAVE_SYS_TIME_H.c
+        FAILED: CMakeFiles/cmTC_5230f.dir/HAVE_SYS_TIME_H.c.obj 
+        "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5230f.dir\\HAVE_SYS_TIME_H.c.obj /FdCMakeFiles\\cmTC_5230f.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-18kuh8\\HAVE_SYS_TIME_H.c
+        D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-18kuh8\\HAVE_SYS_TIME_H.c(2): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:379 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdbool.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tzlsad"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tzlsad"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_STDBOOL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tzlsad'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_eb01a
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_eb01a.dir\\HAVE_STDBOOL_H.c.obj /FdCMakeFiles\\cmTC_eb01a.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-tzlsad\\HAVE_STDBOOL_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_eb01a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_eb01a.dir\\HAVE_STDBOOL_H.c.obj  /out:cmTC_eb01a.exe /implib:cmTC_eb01a.lib /pdb:cmTC_eb01a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:380 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/param.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-wwb6w3"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-wwb6w3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_SYS_PARAM_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-wwb6w3'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_fc44d
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_fc44d.dir\\HAVE_SYS_PARAM_H.c.obj /FdCMakeFiles\\cmTC_fc44d.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-wwb6w3\\HAVE_SYS_PARAM_H.c
+        FAILED: CMakeFiles/cmTC_fc44d.dir/HAVE_SYS_PARAM_H.c.obj 
+        "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_fc44d.dir\\HAVE_SYS_PARAM_H.c.obj /FdCMakeFiles\\cmTC_fc44d.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-wwb6w3\\HAVE_SYS_PARAM_H.c
+        D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-wwb6w3\\HAVE_SYS_PARAM_H.c(2): fatal error C1083: Cannot open include file: 'sys/param.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:381 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/ioctl.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-j7n03e"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-j7n03e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_SYS_IOCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-j7n03e'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c04c7
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c04c7.dir\\HAVE_SYS_IOCTL_H.c.obj /FdCMakeFiles\\cmTC_c04c7.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-j7n03e\\HAVE_SYS_IOCTL_H.c
+        FAILED: CMakeFiles/cmTC_c04c7.dir/HAVE_SYS_IOCTL_H.c.obj 
+        "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c04c7.dir\\HAVE_SYS_IOCTL_H.c.obj /FdCMakeFiles\\cmTC_c04c7.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-j7n03e\\HAVE_SYS_IOCTL_H.c
+        D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-j7n03e\\HAVE_SYS_IOCTL_H.c(2): fatal error C1083: Cannot open include file: 'sys/ioctl.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:382 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cvpwdt"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cvpwdt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cvpwdt'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e67ba
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e67ba.dir\\HAVE_FCNTL_H.c.obj /FdCMakeFiles\\cmTC_e67ba.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cvpwdt\\HAVE_FCNTL_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e67ba.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_e67ba.dir\\HAVE_FCNTL_H.c.obj  /out:cmTC_e67ba.exe /implib:cmTC_e67ba.lib /pdb:cmTC_e67ba.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:383 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file usbhid.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tlam1i"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tlam1i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_USBHID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tlam1i'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4ec6d
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4ec6d.dir\\HAVE_USBHID_H.c.obj /FdCMakeFiles\\cmTC_4ec6d.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-tlam1i\\HAVE_USBHID_H.c
+        FAILED: CMakeFiles/cmTC_4ec6d.dir/HAVE_USBHID_H.c.obj 
+        "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4ec6d.dir\\HAVE_USBHID_H.c.obj /FdCMakeFiles\\cmTC_4ec6d.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-tlam1i\\HAVE_USBHID_H.c
+        D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-tlam1i\\HAVE_USBHID_H.c(2): fatal error C1083: Cannot open include file: 'usbhid.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:384 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-i3elzr"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-i3elzr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-i3elzr'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_9c356
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -DCHECK_FUNCTION_EXISTS=gettimeofday /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_9c356.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_9c356.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-i3elzr\\CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9c356.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_9c356.dir\\CheckFunctionExists.c.obj  /out:cmTC_9c356.exe /implib:cmTC_9c356.lib /pdb:cmTC_9c356.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_9c356.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9c356.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_9c356.dir\\CheckFunctionExists.c.obj  /out:cmTC_9c356.exe /implib:cmTC_9c356.lib /pdb:cmTC_9c356.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9c356.dir\\CheckFunctionExists.c.obj /out:cmTC_9c356.exe /implib:cmTC_9c356.lib /pdb:cmTC_9c356.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9c356.dir/intermediate.manifest CMakeFiles\\cmTC_9c356.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: unresolved external symbol gettimeofday referenced in function main
+        cmTC_9c356.exe : fatal error LNK1120: 1 unresolved externals\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:385 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for XParseGeometry"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-60vuz1"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-60vuz1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_XPARSEGEOMETRY"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-60vuz1'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_de5ce
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -DCHECK_FUNCTION_EXISTS=XParseGeometry /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_de5ce.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_de5ce.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-60vuz1\\CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_de5ce.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_de5ce.dir\\CheckFunctionExists.c.obj  /out:cmTC_de5ce.exe /implib:cmTC_de5ce.lib /pdb:cmTC_de5ce.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_de5ce.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_de5ce.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_de5ce.dir\\CheckFunctionExists.c.obj  /out:cmTC_de5ce.exe /implib:cmTC_de5ce.lib /pdb:cmTC_de5ce.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_de5ce.dir\\CheckFunctionExists.c.obj /out:cmTC_de5ce.exe /implib:cmTC_de5ce.lib /pdb:cmTC_de5ce.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_de5ce.dir/intermediate.manifest CMakeFiles\\cmTC_de5ce.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: unresolved external symbol XParseGeometry referenced in function main
+        cmTC_de5ce.exe : fatal error LNK1120: 1 unresolved externals\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:393 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-12hzcf"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-12hzcf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-12hzcf'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_383bf
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_383bf.dir\\HAVE_STDINT_H.c.obj /FdCMakeFiles\\cmTC_383bf.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-12hzcf\\HAVE_STDINT_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_383bf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_383bf.dir\\HAVE_STDINT_H.c.obj  /out:cmTC_383bf.exe /implib:cmTC_383bf.lib /pdb:cmTC_383bf.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:394 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-397ygq"
+      binary: "D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-397ygq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "E:/Visual Studio/2022/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/Visual Studio/2022/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/OpenGLLearning/vcpkg_installed/vcpkg/blds/freeglut/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-397ygq'
+        
+        Run Build Command(s): "E:/Visual Studio/2022/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_0febe
+        [1/2] "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_0febe.dir\\HAVE_INTTYPES_H.c.obj /FdCMakeFiles\\cmTC_0febe.dir\\ /FS -c D:\\Projects\\OpenGLLearning\\vcpkg_installed\\vcpkg\\blds\\freeglut\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-397ygq\\HAVE_INTTYPES_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "E:\\Visual Studio\\2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0febe.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio\\2022\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_0febe.dir\\HAVE_INTTYPES_H.c.obj  /out:cmTC_0febe.exe /implib:cmTC_0febe.lib /pdb:cmTC_0febe.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...
