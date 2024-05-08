@@ -3,12 +3,10 @@
 #include "block_renderer.h"
 
 // block creation
-Block blocks[512];
-unsigned short block_count = 0;
+std::vector<Block> blocks;
 
 void create_block(v3 position, BlockColor color) {
-    blocks[block_count] = Block { position, color };
-    block_count++;
+    blocks.push_back(Block { position, color });
 }
 
 // rendering

@@ -21,9 +21,15 @@
     <ClCompile Include="block_renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="block_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="block_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="block_loader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
