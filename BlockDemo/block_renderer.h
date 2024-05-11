@@ -16,4 +16,4 @@ struct Block {
 
 void render_init(const char* window_name);
 void create_block(v3 position, BlockColor color = { 255, 0, 0 });
-void render_blocks(double camera_distance);
+void render_blocks();

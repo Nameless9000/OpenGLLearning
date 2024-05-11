@@ -61,7 +61,10 @@ void load_blocks(std::string save) {
             std::stringstream properties_stream(block_values[5]);
 
             while (std::getline(properties_stream, item, '+')) {
-                properties.push_back(std::stoi(item));
+                if (item.empty())
+                    properties.push_back(0);
+                else
+                    properties.push_back(std::stoi(item));
             }
         }
 

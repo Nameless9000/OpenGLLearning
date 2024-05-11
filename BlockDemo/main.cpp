@@ -6,14 +6,10 @@
 #include <iostream>
 
 int main(int argc, char* argv[]) {
-    if (argc < 2 || argc > 3) {
-        std::cout << argv[0] << " <file_path> [camera_distance] :: Renders a save file.\n";
+    if (argc != 2 ) {
+        std::cout << argv[0] << " <file_path> :: Renders a save file.\n";
         return -1;
     }
-
-    double camera_distance = 15;
-    if (argc == 3)
-        camera_distance = std::stod(argv[2]);
 
     render_init("Save Viewer");
 
@@ -32,6 +28,6 @@ int main(int argc, char* argv[]) {
 
     file_input.close();
 
-    render_blocks(camera_distance);
+    render_blocks();
     return 0;
 }

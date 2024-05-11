@@ -4,6 +4,8 @@
 #include <tuple>
 #include <vector>
 #include <iostream>
+#include <unordered_set>
+#include <functional>
 
 // block creation
 std::vector<Block> blocks;
@@ -21,7 +23,7 @@ static void init() {
     glEnable(GL_COLOR_MATERIAL);
 }
 
-GLdouble distance = 15;
+GLdouble distance = 0;
 GLdouble centerx = 0.0;
 GLdouble centery = 0.0;
 GLdouble centerz = 0.0;
@@ -33,7 +35,7 @@ static void display() {
     GLint viewport[4];
     glGetIntegerv(GL_VIEWPORT, viewport);
     double aspect = (double)viewport[2] / (double)viewport[3];
-    gluPerspective(60, aspect, 1, 100);
+    gluPerspective(60, aspect, 1, 10000);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -85,25 +87,52 @@ void render_init(const char* window_name) {
     glutCreateWindow(window_name);
 }
 
+static size_t position_hash(v3 position)
+{
+    size_t hash = 17;
+    hash = hash * 31 + std::hash<float>()(position.x);
+    hash = hash * 31 + std::hash<float>()(position.y);
+    hash = hash * 31 + std::hash<float>()(position.z);
+    return hash;
+}
+
 bool rendered = false;
-void render_blocks(double camera_distance)
+void render_blocks()
 {
     if (rendered)
         return;
     rendered = true;
 
-    distance = camera_distance;
-
     GLdouble sum_X = 0.0, sum_Y = 0.0, sum_Z = 0.0;
+
+    std::unordered_set<size_t> positions;
+
     for (Block block : blocks) {
+        // only use a position once
+        size_t phash = position_hash(block.position);
+        if (positions.count(phash) > 0)
+            continue;
+
         sum_X += block.position.x;
         sum_Y += block.position.y;
         sum_Z += block.position.z;
+        positions.insert(phash);
     }
 
-    centerx = sum_X / blocks.size();
-    centery = sum_Y / blocks.size();
-    centerz = sum_Z / blocks.size();
+    centerx = sum_X / positions.size();
+    centery = sum_Y / positions.size();
+    centerz = sum_Z / positions.size();
+
+    for (Block block : blocks) {
+        GLdouble new_distance = (
+                (block.position.x - centerx) +
+                (block.position.y - centery) +
+                (block.position.z - centerz)
+            );
+
+        if (new_distance > distance)
+            distance = new_distance;
+    }
 
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);
